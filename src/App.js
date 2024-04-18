@@ -115,12 +115,12 @@ class APIMeshExample extends React.Component {
                       <Tooltip
                         anchorId={idx + this.state.salePrice}
                         place="bottom"
-                        content="Source: CPQ" />
+                        content="Source: SAP" />
 
                       <Tooltip
                         anchorId={item.sku + idx}
                         place="right"
-                        content="Source: CPQ" />
+                        content="Source: SAP" />
 
                  
                     </li></>
