@@ -1,4 +1,4 @@
-const SEARCH_TERM = "fibe";
+const SEARCH_TERM = "device";
 const NUMBER_OF_RESULTS = 6;
 
 const query = {
