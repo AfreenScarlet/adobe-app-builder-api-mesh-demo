@@ -27,7 +27,7 @@
             "name": "AdobeCommerce",
             "handler": {
                 "graphql": {
-                    "endpoint": "https://mag201.adobedemo.com//graphql",
+                    "endpoint": "https://com249.adobedemo.com/graphql",
                     "operationHeaders": { "Content-Type": "application/json", "store": "default"}
             
                 }

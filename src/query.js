@@ -1,4 +1,4 @@
-const SEARCH_TERM = "device";
+const SEARCH_TERM = "test";
 const NUMBER_OF_RESULTS = 6;
 
 const query = {
