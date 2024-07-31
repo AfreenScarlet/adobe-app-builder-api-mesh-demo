@@ -8,20 +8,28 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "fetch": "1.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
     "react-tooltip": "5.7.5"
   },
   "devDependencies": {
     "typescript": "3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": [
     ">0.2%",

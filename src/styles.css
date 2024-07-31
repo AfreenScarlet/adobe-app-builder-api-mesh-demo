@@ -36,7 +36,7 @@ a:link {
 }
 
 .nav {
-  width: 1720px;
+  max-width: 1340px;
   margin-bottom: 0px;
 }
 .header {

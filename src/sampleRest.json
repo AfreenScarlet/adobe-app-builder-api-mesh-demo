@@ -1,112 +1,20 @@
 {
-  "LocationServiceAPI": [
-    {
-      "sku": "VA12-SI-NA",
-      "location": "Warehouse C",
-      "quantity": 34
-    },
-    {
-      "sku": "VA18-GO-NA",
-      "location": "Warehouse B",
-      "quantity": 10
-    },
-    {
-      "sku": "VA16-GO-NA",
-      "location": "Warehouse D",
-      "quantity": 2
-    },
-    {
-      "sku": "VA11-GO-NA",
-      "location": "Warehouse A",
-      "quantity": 10
-    },
-    {
-      "sku": "VA15-SI-NA",
-      "location": "Warehouse D",
-      "quantity": 10
-    },
-    {
-      "sku": "VA17-SI-NA",
-      "location": "Warehouse B",
-      "quantity": 5
-    }
-  ],
   "AdobeCommerceAPI": {
     "products": {
       "items": [
         {
-          "name": "Casio G-Shock Analog-Digital Red and Black Watch",
-          "sku": "UHI123004",
+          "name": "Adhesive Dow SYLGARD™ 184 SILICONE Elastomer CLEAR",
+          "sku": "184 SIL ELASTIC",
           "price_range": {
             "minimum_price": {
               "regular_price": {
-                "value": 3,
+                "value": 330,
                 "currency": "USD"
               }
             }
           },
           "image": {
-            "url": "https://mag238.adobedemo.com/media/catalog/product/cache/0031f4c146bf54cdfa5382f262245b6b/c/h/cherry.jpeg"
-          }
-        },
-        {
-          "name": "42mm Men's Bulova Classic",
-          "sku": "UHI123003",
-          "price_range": {
-            "minimum_price": {
-              "regular_price": {
-                "value": 3,
-                "currency": "USD"
-              }
-            }
-          },
-          "image": {
-            "url": "https://mag238.adobedemo.com/media/catalog/product/cache/0031f4c146bf54cdfa5382f262245b6b/s/t/strawberry.jpg"
-          }
-        },
-        {
-          "name": "42mm Men's Bulova Chronograph",
-          "sku": "UHI123002",
-          "price_range": {
-            "minimum_price": {
-              "regular_price": {
-                "value": 3,
-                "currency": "USD"
-              }
-            }
-          },
-          "image": {
-            "url": "https://mag238.adobedemo.com/media/catalog/product/cache/0031f4c146bf54cdfa5382f262245b6b/w/a/watermelon.jpeg"
-          }
-        },
-        {
-          "name": "37mm Men's Bulova Automatic",
-          "sku": "UHI123001",
-          "price_range": {
-            "minimum_price": {
-              "regular_price": {
-                "value": 3,
-                "currency": "USD"
-              }
-            }
-          },
-          "image": {
-            "url": "https://mag238.adobedemo.com/media/catalog/product/cache/0031f4c146bf54cdfa5382f262245b6b/h/o/honey.jpeg"
-          }
-        },
-        {
-          "name": "41mm Men's Seiko Essentials",
-          "sku": "UHI123005",
-          "price_range": {
-            "minimum_price": {
-              "regular_price": {
-                "value": 12,
-                "currency": "USD"
-              }
-            }
-          },
-          "image": {
-            "url": "https://mag238.adobedemo.com/media/catalog/product/cache/0031f4c146bf54cdfa5382f262245b6b/b/u/bundle.jpg"
+            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/s/c/screenshot_2024-07-12_at_11.20.29_am_1.png"
           }
         }
       ]

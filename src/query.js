@@ -1,9 +1,9 @@
-const SEARCH_TERM = "test";
+const SEARCH_TERM = "adhesive elastic";
 const NUMBER_OF_RESULTS = 6;
 
 const query = {
   query: `{
-    products(search: "${SEARCH_TERM}") {
+    products(search: "${SEARCH_TERM}", pageSize: ${NUMBER_OF_RESULTS}) {
       items {
         name
         sku

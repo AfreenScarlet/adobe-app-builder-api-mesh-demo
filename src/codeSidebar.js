@@ -3,15 +3,15 @@ import restResponse from './sampleRest.json'
 import "./styles.css";
 
 const CodeSidebar = ({ meshResponse }) => {
-  const [isMeshResponseVisible, setisMeshResponseVisible] = useState(false);
-  const [isRestResponseVisible, setisRestResponseVisible] = useState(false);
+  const [isMeshResponseVisible, setIsMeshResponseVisible] = useState(false);
+  const [isRestResponseVisible, setIsRestResponseVisible] = useState(false);
 
   const toggleMeshSidebar = () => {
-    setisMeshResponseVisible(!isMeshResponseVisible);
+    setIsMeshResponseVisible(!isMeshResponseVisible);
   };
 
   const toggleRestSidebar = () => {
-    setisRestResponseVisible(!isRestResponseVisible);
+    setIsRestResponseVisible(!isRestResponseVisible);
   };
 
   return (
