@@ -10,7 +10,7 @@ h2 {
 
 ul {
   display:grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 250px 250px;
   grid-template-rows: 600px;
   list-style: none;
 }
@@ -102,7 +102,7 @@ input {
 .code-sidebar {
   background-color: black;
   color: white;
-  width: 500px;
+  width: 400px;
   height: 900px;
   overflow: scroll;  
   margin-right: 20px
