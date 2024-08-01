@@ -5,16 +5,12 @@
 
 h2 {
   padding: 20px;
-}
-
-img {
-  width: 260px;
-  margin-bottom: 30px;
+  font-family: sans-serif;
 }
 
 ul {
   display:grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 250px 250px;
   grid-template-rows: 600px;
   list-style: none;
 }
@@ -31,6 +27,7 @@ button {
   height: 33px;
   margin-right: 20px;
   font-weight: 550;
+  font-family: sans-serif;
 }
 
 a:link {
@@ -39,7 +36,7 @@ a:link {
 }
 
 .nav {
-  width: 1720px;
+  max-width: 1340px;
   margin-bottom: 0px;
 }
 .header {
@@ -58,11 +55,20 @@ a:link {
 .item-name {
   font-weight: 600;
   font-family: sans-serif;
-  height: 20px;
+  width: 250px;
+  /* margin-bottom: 30px; */
+  min-height: 50px;
+  /* margin-top: -20px; */
 }
 
-.auto-width {
+/* .auto-width {
   width: max-content;
+} */
+
+.product-image {
+  width:  250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .price-container {
@@ -70,8 +76,9 @@ a:link {
 }
 
 .price {
+  font-family: sans-serif;
   display: inline-block;
-  width: 30px;
+  margin-right: 10px;
 }
 
 .done {
@@ -81,10 +88,10 @@ a:link {
 
 .strike {
   text-decoration: line-through;
-  margin-right: 25px;
 }
 
 .sale {
+  font-family: sans-serif;
   color: red;
 }
 
@@ -95,7 +102,7 @@ input {
 .code-sidebar {
   background-color: black;
   color: white;
-  width: 500px;
+  width: 400px;
   height: 900px;
   overflow: scroll;  
   margin-right: 20px

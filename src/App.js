@@ -5,16 +5,13 @@ import {Tooltip} from "react-tooltip";
 import query from "./query.js";
 import CodeSidebar from "./codeSidebar";
 
-const API_MESH_URL =
-  "https://graph.adobe.io/api/3c5f3116-2b2b-45dc-9cff-0bb931791904/graphql?api_key=758a0d3cba5649208dc67c78db1d58f8";
-
-const SOURCE_1_NAME = "Source: Adobe Commerce";
-const SOURCE_2_NAME = "Source: ERP";
-
 const USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD"
 });
+
+const API_MESH_URL =
+  "https://graph.adobe.io/api/ec3e7f33-9db2-404d-9f96-d173b3a575c8/graphql?api_key=9535cbef33c2420392224d6a29e7becb";
 
 class APIMeshExample extends React.Component {
   constructor(props) {
@@ -49,79 +46,74 @@ class APIMeshExample extends React.Component {
 
   render() {
     return (
-      <>
-        <div>
-          <img className="nav" src="nav.png" />
-          <h2>Your search results</h2>
+      <div>
+        <img className="nav" src="nav.png" />
+        <h2>Your search results</h2>
 
-          <div className="results">
-            <div>
-              <ul>
-                {this.state.products.map((item, idx) => (
-                  <>
-                    <li id={idx} key={item.sku}>
-                      <img id={item.image.url} src={item.image.url} />
-                      <p className="item-name auto-width" id={item.name}>
-                        {item.name}
+        <div className="results" key="div0">
+          {this.state.products ? (
+            <ul key="list0">
+              {this.state.products.map((item, idx) => (
+                <li id={idx} key={item.sku.split[0]}>
+                  <img className="product-image" id={item.image.url} src={item.image.url} />
+                  <p className="item-name auto-width" id={item.name.split[0] + idx}>
+                    {item.name}
+                  </p>
+
+                  {this.state.salePrice ? (
+                    <div className="price-container">
+                      <p className="price strike" id={idx + item.price_range.minimum_price.regular_price.value}>
+                        {USDollar.format(item.price_range.minimum_price.regular_price.value)}
                       </p>
+                      <p className="price sale" id={idx + this.state.salePrice}>
+                        {USDollar.format(item.price_range.minimum_price.regular_price.value * this.state.salePrice)}
+                      </p>
+                    </div>
+                  ) : (
+                    <p id="price">${item.price_range.minimum_price.regular_price.value}</p>
+                  )}
 
-                      {this.state.salePrice ? (
-                        <div className="price-container">
-                          <p className="price strike" id={idx + item.price_range.minimum_price.regular_price.value}>
-                            {USDollar.format(item.price_range.minimum_price.regular_price.value)}
-                          </p>
-                          <p className="price sale" id={idx + this.state.salePrice}>
-                            {USDollar.format(item.price_range.minimum_price.regular_price.value * this.state.salePrice)}
-                          </p>
-                        </div>
-                      ) : (
-                        <p id="price">${item.price_range.minimum_price.regular_price.value}</p>
-                      )}
+                  <button>ADD TO CART</button>
+                  <span>&#9825;</span>
 
-                      <button>ADD TO CART</button>
-                      <span>&#9825;</span>
+                  {item.demoDetails ? (
+                    <div>
+                      <p style={{width: "130px"}} id={item.sku + idx}>
+                        Items remaining: {item.demoDetails.quantity}
+                      </p>
+                    </div>
+                  ) : (
+                    <div>
+                      <p style={{width: "130px"}} id={item.sku + idx}>
+                        Items remaining: {Math.floor(Math.random() * 10) + 1}
+                      </p>
+                    </div>
+                  )}
 
-                      {item.demoDetails ? (
-                        <div>
-                          <p className="auto-width" id={item.sku}>
-                            Items remaining: {item.demoDetails.quantity}
-                          </p>
-                          <p className="auto-width" id={item.sku + idx}>
-                            Location: {item.demoDetails.location}
-                          </p>
-                        </div>
-                      ) : (
-                        <div></div>
-                      )}
+                  <Tooltip anchorId={item.image.url} place="bottom" content="Source: Adobe Commerce" />
 
-                      <Tooltip anchorId={item.image.url} place="bottom" content={SOURCE_1_NAME} />
+                  <Tooltip anchorId={item.name.split[0] + idx} place="top" content="Source: Adobe Commerce" />
 
-                      <Tooltip anchorId={item.name} place="bottom" content={SOURCE_1_NAME} />
-
-                      <Tooltip
-                        anchorId={idx + item.price_range.minimum_price.regular_price.value}
-                        place="bottom"
-                        content={SOURCE_1_NAME}
-                      />
-
-                      <Tooltip anchorId={idx + this.state.salePrice} place="bottom" content={SOURCE_2_NAME} />
-
-                      <Tooltip anchorId={"price"} place="bottom" content={SOURCE_1_NAME} />
-
-                      <Tooltip anchorId={item.sku} place="bottom" content={SOURCE_2_NAME} />
-
-                      <Tooltip anchorId={item.sku + idx} place="bottom" content={SOURCE_2_NAME} />
-                    </li>
-                  </>
-                ))}
-              </ul>
-            </div>
+                  <Tooltip
+                    anchorId={idx + item.price_range.minimum_price.regular_price.value}
+                    place="bottom"
+                    content="Source: Adobe Commerce"
+                  />
+                </li>
+              ))}
+            </ul>
+          ) : (
+            ""
+          )}
+          {this.state.apiMeshRes ? (
             <div>
               <CodeSidebar meshResponse={this.state.apiMeshRes} />
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
-      </>
+      </div>
     );
   }
 }
