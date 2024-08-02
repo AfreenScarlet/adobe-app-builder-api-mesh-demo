@@ -13,6 +13,9 @@ const USDollar = new Intl.NumberFormat("en-US", {
 const API_MESH_URL =
   "https://graph.adobe.io/api/ec3e7f33-9db2-404d-9f96-d173b3a575c8/graphql?api_key=9535cbef33c2420392224d6a29e7becb";
 
+const SOURCE_1_NAME = "Source: Adobe Commerce";
+const SOURCE_2_NAME = "Source: SAP";
+
 class APIMeshExample extends React.Component {
   constructor(props) {
     super(props);
@@ -54,9 +57,9 @@ class APIMeshExample extends React.Component {
           {this.state.products ? (
             <ul key="list0">
               {this.state.products.map((item, idx) => (
-                <li id={idx} key={item.sku.split[0]}>
+                <li id={idx} key={item.sku}>
                   <img className="product-image" id={item.image.url} src={item.image.url} />
-                  <p className="item-name auto-width" id={item.name.split[0] + idx}>
+                  <p className="item-name auto-width" id={item.name + idx}>
                     {item.name}
                   </p>
 
@@ -78,13 +81,13 @@ class APIMeshExample extends React.Component {
 
                   {item.demoDetails ? (
                     <div>
-                      <p style={{width: "130px"}} id={item.sku + idx}>
+                      <p style={{width: "130px"}} id={item.sku + idx + "qty"}>
                         Items remaining: {item.demoDetails.quantity}
                       </p>
                     </div>
                   ) : (
                     <div>
-                      <p style={{width: "130px"}} id={item.sku + idx}>
+                      <p style={{width: "130px"}} id={item.sku + idx + "qty"}>
                         Items remaining: {Math.floor(Math.random() * 10) + 1}
                       </p>
                     </div>
@@ -92,26 +95,26 @@ class APIMeshExample extends React.Component {
 
                   <Tooltip anchorId={item.image.url} place="bottom" content="Source: Adobe Commerce" />
 
-                  <Tooltip anchorId={item.name.split[0] + idx} place="top" content="Source: Adobe Commerce" />
+                  <Tooltip anchorId={item.name + idx} place="top" content="Source: Adobe Commerce" />
 
                   <Tooltip
                     anchorId={idx + item.price_range.minimum_price.regular_price.value}
                     place="bottom"
                     content="Source: Adobe Commerce"
                   />
+
+                  <Tooltip anchorId={idx + this.state.salePrice} place="bottom" content={SOURCE_2_NAME} />
+
+                  <Tooltip anchorId={item.sku + idx + "qty"} place="bottom" content={SOURCE_2_NAME} />
                 </li>
               ))}
             </ul>
           ) : (
             ""
           )}
-          {this.state.apiMeshRes ? (
-            <div>
-              <CodeSidebar meshResponse={this.state.apiMeshRes} />
-            </div>
-          ) : (
-            ""
-          )}
+          <div>
+            <CodeSidebar meshResponse={this.state.apiMeshRes} />
+          </div>
         </div>
       </div>
     );

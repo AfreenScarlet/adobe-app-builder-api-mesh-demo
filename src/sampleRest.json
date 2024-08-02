@@ -1,7 +1,75 @@
 {
+  "LocationServiceAPI": [
+    {
+      "sku": "DOWSIL™ EC-6601 Electrically Conductive Adhesive",
+      "location": "Warehouse D",
+      "quantity": 2
+    },
+    {
+      "sku": "DOWSIL™ ME-1800 Adhesive",
+      "location": "Warehouse D",
+      "quantity": 10
+    },
+    {
+      "sku": "DOWSIL™ DA-6534 Adhesive",
+      "location": "Warehouse A",
+      "quantity": 21
+    },
+    {
+      "sku": "184 SIL ELASTIC",
+      "location": "Warehouse B",
+      "quantity": 8
+    }
+  ],
+
   "AdobeCommerceAPI": {
     "products": {
       "items": [
+        {
+          "name": "DOWSIL™ EC-6601 Adhesive",
+          "sku": "DOWSIL™ EC-6601 Electrically Conductive Adhesive",
+          "price_range": {
+            "minimum_price": {
+              "regular_price": {
+                "value": 500,
+                "currency": "USD"
+              }
+            }
+          },
+          "image": {
+            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa.jpg"
+          }
+        },
+        {
+          "name": "DOWSIL™ ME-1800 Adhesive",
+          "sku": "DOWSIL™ ME-1800 Adhesive",
+          "price_range": {
+            "minimum_price": {
+              "regular_price": {
+                "value": 350,
+                "currency": "USD"
+              }
+            }
+          },
+          "image": {
+            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa_1_1.jpg"
+          }
+        },
+        {
+          "name": "DOWSIL™ DA-6534 Adhesive",
+          "sku": "DOWSIL™ DA-6534 Adhesive",
+          "price_range": {
+            "minimum_price": {
+              "regular_price": {
+                "value": 700,
+                "currency": "USD"
+              }
+            }
+          },
+          "image": {
+            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa_1.jpg"
+          }
+        },
         {
           "name": "Adhesive Dow SYLGARD™ 184 SILICONE Elastomer CLEAR",
           "sku": "184 SIL ELASTIC",

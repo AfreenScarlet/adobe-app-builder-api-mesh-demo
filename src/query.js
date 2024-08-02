@@ -1,4 +1,4 @@
-const SEARCH_TERM = "adhesive elastic";
+const SEARCH_TERM = "adhesive";
 const NUMBER_OF_RESULTS = 6;
 
 const query = {
@@ -20,7 +20,7 @@ const query = {
         }
         ... on SimpleProduct {
           demoDetails {
-            
+            price
             sku
             location
             quantity
