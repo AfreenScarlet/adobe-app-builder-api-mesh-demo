@@ -14,7 +14,7 @@ const API_MESH_URL =
   "https://edge-sandbox-graph.adobe.io/api/63538286-53be-4ddd-8a00-70779cd88f9f/graphql";
 
 const SOURCE_1_NAME = "Source: Adobe Commerce";
-const SOURCE_2_NAME = "Source: SAP";
+const SOURCE_2_NAME = "Source: ERP";
 
 class APIMeshExample extends React.Component {
   constructor(props) {
