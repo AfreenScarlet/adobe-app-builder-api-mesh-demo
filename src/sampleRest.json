@@ -1,22 +1,22 @@
 {
   "LocationServiceAPI": [
     {
-      "sku": "DOWSIL™ EC-6601 Electrically Conductive Adhesive",
+      "sku": "Racker Blade Server",
       "location": "Warehouse D",
       "quantity": 2
     },
     {
-      "sku": "DOWSIL™ ME-1800 Adhesive",
+      "sku": "Blade Server Model XZ",
       "location": "Warehouse D",
       "quantity": 10
     },
     {
-      "sku": "DOWSIL™ DA-6534 Adhesive",
+      "sku": "Bodea Racker Blade Server",
       "location": "Warehouse A",
       "quantity": 21
     },
     {
-      "sku": "184 SIL ELASTIC",
+      "sku": "Cooler Z2",
       "location": "Warehouse B",
       "quantity": 8
     }
@@ -26,63 +26,78 @@
     "products": {
       "items": [
         {
-          "name": "DOWSIL™ EC-6601 Adhesive",
-          "sku": "DOWSIL™ EC-6601 Electrically Conductive Adhesive",
+          "name": "Racker Blade Server",
+          "sku": "Racker Blade Server",
           "price_range": {
             "minimum_price": {
               "regular_price": {
-                "value": 500,
+                "value": 1650,
                 "currency": "USD"
               }
             }
           },
           "image": {
-            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa.jpg"
+            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/b/l/blade-server-racker.jpg"
           }
         },
         {
-          "name": "DOWSIL™ ME-1800 Adhesive",
-          "sku": "DOWSIL™ ME-1800 Adhesive",
+          "name": "Blade Server Model XZ",
+          "sku": "Blade Server Model XZ",
           "price_range": {
             "minimum_price": {
               "regular_price": {
-                "value": 350,
+                "value": 1230,
                 "currency": "USD"
               }
             }
           },
           "image": {
-            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa_1_1.jpg"
+            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/b/l/blade-server.jpg"
           }
         },
         {
-          "name": "DOWSIL™ DA-6534 Adhesive",
-          "sku": "DOWSIL™ DA-6534 Adhesive",
+          "name": "Bodea Racker Blade Server",
+          "sku": "bodea-racker-blade-server",
           "price_range": {
             "minimum_price": {
               "regular_price": {
-                "value": 700,
+                "value": 1650,
                 "currency": "USD"
               }
             }
           },
           "image": {
-            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/d/o/dowsil_-3-8219-rf-silicone-foam-mascherpa_1.jpg"
+            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/f/i/firefly_blade_server_product_68342.jpg"
           }
         },
         {
-          "name": "Adhesive Dow SYLGARD™ 184 SILICONE Elastomer CLEAR",
-          "sku": "184 SIL ELASTIC",
+          "name": "Cooler Z2",
+          "sku": "Cooler Z2",
           "price_range": {
             "minimum_price": {
               "regular_price": {
-                "value": 330,
+                "value": 520.99,
                 "currency": "USD"
               }
             }
           },
           "image": {
-            "url": "https://dow-com876.adobedemo.com/media/catalog/product/cache/e5e5c689124038606416a3a08f6cdf10/s/c/screenshot_2024-07-12_at_11.20.29_am_1.png"
+            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/f/i/firefly_image_of_an_ac_unit_for_a_server_rack_43742_2.jpg"
+          }
+        },
+        {
+          "name": "Data Center System",
+          "sku": "Data Center System",
+          "price_range": {
+            "minimum_price": {
+              "regular_price": {
+                "value": 7500,
+                "currency": "USD"
+              }
+            }
+          },
+          "image": {
+            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/d/a/data-center-system.jpg"
           }
         }
       ]

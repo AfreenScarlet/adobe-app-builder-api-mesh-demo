@@ -11,7 +11,7 @@ const USDollar = new Intl.NumberFormat("en-US", {
 });
 
 const API_MESH_URL =
-  "https://graph.adobe.io/api/ec3e7f33-9db2-404d-9f96-d173b3a575c8/graphql?api_key=9535cbef33c2420392224d6a29e7becb";
+  "https://edge-sandbox-graph.adobe.io/api/63538286-53be-4ddd-8a00-70779cd88f9f/graphql";
 
 const SOURCE_1_NAME = "Source: Adobe Commerce";
 const SOURCE_2_NAME = "Source: SAP";

@@ -1,65 +1,65 @@
 {
-    "meshConfig": {
-      "files": [
-        {
-          "path": "./demoResponse.json",
-                  "content": "{\n    \"products\": [\n        {\n            \"location\": \"Warehouse A\",\n            \"price\": 9.99,\n            \"quantity\": 21,\n            \"sku\": \"4019862\",\n            \"zipcode\": 785585\n        }\n    ]\n}"
-        },
-        {
-          "path": "./additional-resolvers.js",
-                  "content": " const resolvers = {\n  SimpleProduct: {\n    demoDetails: {\n      selectionSet: /* GraphQL */ `\n        {\n          sku\n        }\n      `,\n      resolve(root, _args, context, info) {\n        return context.SAP.Query.demo({\n          root,\n          args: {\n            skus: `${root.sku}`\n          },\n          context,\n          info,\n          selectionSet: \"{ products { sku location quantity zipcode price } }\"\n        }).then((response) => { \n            return response.products.filter((product) => product.sku === root.sku)[0];\n        })\n      }\n    }\n  }\n}\n\nmodule.exports = {\n    resolvers\n}\n "
-        }
-      ],
-      "responseConfig": {
-        "CORS": {
-          "methods": [
-            "GET",
-            "POST"
-          ],
-          "origin": [
-            "http://localhost:3000",
-            "https://mzsvtc-3000.csb.app",
-            "https://2wj5zw-3000.csb.app",
-            "https://wzlr54-3000.csb.app",
-            "https://codesandbox.io"
-          ]
+  "meshConfig": {
+    "files": [
+      {
+        "path": "./demoResponse.json",
+        "content": "{\n    \"products\": [\n        {\n            \"location\": \"Warehouse A\",\n            \"price\": 9.99,\n            \"quantity\": 21,\n            \"sku\": \"4019862\",\n            \"zipcode\": 785585\n        }\n    ]\n}"
+      },
+      {
+        "path": "./additional-resolvers.js",
+        "content": " const resolvers = {\n  SimpleProduct: {\n    demoDetails: {\n      selectionSet: /* GraphQL */ `\n        {\n          sku\n        }\n      `,\n      resolve(root, _args, context, info) {\n        return context.SAP.Query.demo({\n          root,\n          args: {\n            skus: `${root.sku}`\n          },\n          context,\n          info,\n          selectionSet: \"{ products { sku location quantity zipcode price } }\"\n        }).then((response) => { \n            return response.products.filter((product) => product.sku === root.sku)[0];\n        })\n      }\n    }\n  }\n}\n\nmodule.exports = {\n    resolvers\n}\n "
+      }
+    ],
+    "responseConfig": {
+      "CORS": {
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "origin": [
+          "http://localhost:3000",
+          "https://mzsvtc-3000.csb.app",
+          "https://2wj5zw-3000.csb.app",
+          "https://wzlr54-3000.csb.app",
+          "https://codesandbox.io"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "name": "AdobeCommerce",
+        "handler": {
+          "graphql": {
+            "endpoint": "https://com876.adobedemo.com/graphql"
+          }
         }
       },
-      "sources": [
-        {
-                  "name": "AdobeCommerce",
-          "handler": {
-            "graphql": {
-              "endpoint": "https://com876.adobedemo.com/graphql"
-            }
-          }
-              },
+      {
+        "name": "SAP",
+        "handler": {
+          "JsonSchema": {
+            "baseUrl": "https://adobeioruntime.net/api/v1/web/283976-319tealcat-stage/default",
+            "operations": [
               {
-                  "name": "SAP",
-                  "handler": {
-                      "JsonSchema": {
-                          "baseUrl": "https://adobeioruntime.net/api/v1/web/283976-319tealcat-stage/default",
-                          "operations": [
-                              {
-                                  "path": "/demo?skus={args.skus}",
-                                  "argTypeMap": {
-                                      "skus": {
-                                          "type": "string"
-                                      }
-                                  },
-                                  "responseSample": "./demoResponse.json",
-                                  "type": "Query",
-                                  "field": "demo",
-                                  "method": "GET"
-                              }
-                          ]
-                      }
+                "path": "/demo?skus={args.skus}",
+                "argTypeMap": {
+                  "skus": {
+                    "type": "string"
                   }
+                },
+                "responseSample": "./demoResponse.json",
+                "type": "Query",
+                "field": "demo",
+                "method": "GET"
+              }
+            ]
+          }
         }
-      ],
-      "additionalTypeDefs": "extend type SimpleProduct {\n    demoDetails: query_demo_products_items \n}\n",
-      "additionalResolvers": [
-        "./additional-resolvers.js"
-      ]
-    }
+      }
+    ],
+    "additionalTypeDefs": "extend type SimpleProduct {\n    demoDetails: query_demo_products_items \n}\n",
+    "additionalResolvers": [
+      "./additional-resolvers.js"
+    ]
   }
+}

@@ -1,4 +1,4 @@
-const SEARCH_TERM = "adhesive";
+const SEARCH_TERM = "server";
 const NUMBER_OF_RESULTS = 6;
 
 const query = {
