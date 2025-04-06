@@ -18,6 +18,7 @@
         ],
         "origin": [
           "http://localhost:3000",
+          "https://f8t5cm-3000.csb.app",
           "https://codesandbox.io"
         ]
       }
