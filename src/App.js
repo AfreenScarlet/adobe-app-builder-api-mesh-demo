@@ -11,7 +11,7 @@ const USDollar = new Intl.NumberFormat("en-US", {
 });
 
 const API_MESH_URL =
-  "https://edge-sandbox-graph.adobe.io/api/63538286-53be-4ddd-8a00-70779cd88f9f/graphql";
+  "https://edge-sandbox-graph.adobe.io/api/8b32b708-751a-489a-99c8-a0725735f891/graphql";
 
 const SOURCE_1_NAME = "Source: Adobe Commerce";
 const SOURCE_2_NAME = "Source: ERP";

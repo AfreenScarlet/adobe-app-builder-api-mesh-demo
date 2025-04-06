@@ -37,7 +37,7 @@
             }
           },
           "image": {
-            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/b/l/blade-server-racker.jpg"
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/b/l/blade-server-racker.jpg"
           }
         },
         {
@@ -52,7 +52,7 @@
             }
           },
           "image": {
-            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/b/l/blade-server.jpg"
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/b/l/blade-server.jpg"
           }
         },
         {
@@ -67,7 +67,22 @@
             }
           },
           "image": {
-            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/f/i/firefly_blade_server_product_68342.jpg"
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/f/i/firefly_blade_server_product_68342.jpg"
+          }
+        },
+        {
+          "name": "Bodea VR Rack",
+          "sku": "bodea-vr-rack",
+          "price_range": {
+            "minimum_price": {
+              "regular_price": {
+                "value": 7500,
+                "currency": "USD"
+              }
+            }
+          },
+          "image": {
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/f/i/firefly_bodea_vr_server_rack_12251.jpg"
           }
         },
         {
@@ -82,7 +97,7 @@
             }
           },
           "image": {
-            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/f/i/firefly_image_of_an_ac_unit_for_a_server_rack_43742_2.jpg"
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/f/i/firefly_image_of_an_ac_unit_for_a_server_rack_43742_2.jpg"
           }
         },
         {
@@ -97,7 +112,7 @@
             }
           },
           "image": {
-            "url": "https://bodea-com876.adobedemo.com/media/catalog/product/cache/4cd6758f469b274943b767d862a934f4/d/a/data-center-system.jpg"
+            "url": "https://bodea-com752.adobedemo.com/media/catalog/product/cache/3ed663f492d5d1d87291982d1230b02c/d/a/data-center-system.jpg"
           }
         }
       ]

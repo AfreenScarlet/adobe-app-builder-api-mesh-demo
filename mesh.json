@@ -18,10 +18,6 @@
         ],
         "origin": [
           "http://localhost:3000",
-          "https://g3mgmt-3000.csb.app",
-          "https://g3mgmt-2222.csb.app",
-          "https://g3mgmt-3000.csb.app/",
-          "https://k37389-3000.csb.app",
           "https://codesandbox.io"
         ]
       }
@@ -31,7 +27,10 @@
         "name": "AdobeCommerce",
         "handler": {
           "graphql": {
-            "endpoint": "https://com876.adobedemo.com/graphql"
+            "endpoint": "https://com752.adobedemo.com/graphql",
+            "operationHeaders": {
+              "Store": "bodea_us"
+            }
           }
         }
       },
