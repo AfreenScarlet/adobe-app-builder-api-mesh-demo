@@ -3,7 +3,7 @@ const NUMBER_OF_RESULTS = 6;
 
 const query = {
   query: `{
-    products(search: "${SEARCH_TERM}", pageSize: ${NUMBER_OF_RESULTS}) {
+    products(search: "${SEARCH_TERM}") {
       items {
         name
         sku
